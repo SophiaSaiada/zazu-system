@@ -11,13 +11,21 @@
         "title": "Reload Zazu Config",
         "icon": "fa-sync",
         "connections": ["Reload"]
+      },
+      {
+        "id": "bluetooth",
+        "type": "PrefixScript",
+        "prefix": "bt",
+        "args": "None",
+        "script": "bluetooth/input.js",
+        "connections": ["ToggleBluetooth"]
       }
     ],
     "output": [
       {
-        "id": "Copy",
-        "type": "CopyToClipboard",
-        "text": "{value}"
+        "id": "ToggleBluetooth",
+        "type": "UserScript",
+        "script": "bluetooth/output.js"
       },
       {
         "id": "Reload",
