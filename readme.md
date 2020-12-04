@@ -1,5 +1,14 @@
-## Zazu Template
+## Zazu Currency Convertor Plugin
 
-[![Build Status](https://travis-ci.org/tinytacoteam/zazu-template.svg?branch=master)](https://travis-ci.org/tinytacoteam/zazu-template)
+Add this plugin object in `zazurc.json`:
 
-Zazu Template for starting your own plugin.
+```json
+{
+  "name": "SophiaSaiada/zazu-currency-converter",
+  "variables": {
+    "currconvApiKey": "API_KEY"
+  }
+}
+```
+
+Replace `API_KEY` with a free API key for [currencyconverterapi.com](https://currencyconverterapi.com), which you can get [here](https://free.currencyconverterapi.com/free-api-key).
