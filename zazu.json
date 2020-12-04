@@ -1,14 +1,16 @@
 {
-  "name": "zazu-currency-converter",
+  "name": "zazu-system",
   "version": "1.0.0",
-  "description": "Zazu plugin for converting amounts between currencies.",
+  "description": "Zazu plugin for for controlling totally random stuff like Bluetooth, and that's it for now.",
   "blocks": {
     "input": [
       {
-        "id": "currency-convertor",
-        "type": "RootScript",
-        "script": "currency-convertor.js",
-        "connections": ["Copy"]
+        "id": "zazu-reload",
+        "type": "Keyword",
+        "keyword": "reload",
+        "title": "Reload Zazu Config",
+        "icon": "fa-sync",
+        "connections": ["Reload"]
       }
     ],
     "output": [
@@ -16,6 +18,10 @@
         "id": "Copy",
         "type": "CopyToClipboard",
         "text": "{value}"
+      },
+      {
+        "id": "Reload",
+        "type": "ReloadConfig"
       }
     ]
   }

@@ -1,12 +1,8 @@
 {
-  "name": "zazu-currency-converter",
+  "name": "zazu-system",
   "version": "1.0.0",
-  "description": "Zazu plugin for converting amounts between currencies.",
+  "description": "Zazu plugin for for controlling totally random stuff like Bluetooth, and that's it for now.",
   "main": "zazu.js",
-  "scripts": {
-    "lint": "eslint .",
-    "test": "mocha ./test"
-  },
   "devDependencies": {},
   "dependencies": {}
 }
